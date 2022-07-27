@@ -1,13 +1,17 @@
 import './App.css';
 import Home from './Components/home';
+import Journal from './Components/journal';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Home />
-      </header>
-    </div>
+      <div className="App">
+       {/* <Home /> */}
+       <Journal />
+      </div>
+  
+      
   );
 }
 

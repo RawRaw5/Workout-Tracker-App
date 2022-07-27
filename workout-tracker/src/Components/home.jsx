@@ -1,7 +1,8 @@
 const React = require('react')
 
+
 export default function Home () {
-    return (
+    return (    
         <div className="home-page">
             <h1>Workout Tracker</h1>
             <div className='days'>
@@ -14,5 +15,6 @@ export default function Home () {
                 <button>Saturday</button>
             </div>
         </div>
+        
     )
 }

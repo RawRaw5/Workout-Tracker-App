@@ -7,8 +7,8 @@ import Journal from './Components/journal';
 function App() {
   return (
       <div className="App">
-       {/* <Home /> */}
-       <Journal />
+       <Home />
+       {/* <Journal /> */}
       </div>
   
       

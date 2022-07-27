@@ -20,3 +20,29 @@
   color: white;
 }
 
+.removebtn, .addbtn {
+ display: inline-block;
+}
+
+.journal-page {
+  margin-left: 40%;
+  margin-right: 40%;
+  
+}
+
+.workouts button {
+  background-color: rgb(86, 211, 253);
+}
+.workouts input {
+  margin-bottom: 5%;
+  
+}
+
+
+
+/* .btnrow {
+  display: flex;
+  margin-left: 40%;
+  margin-right: 40%;
+} */
+

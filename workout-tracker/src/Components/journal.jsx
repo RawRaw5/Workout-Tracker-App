@@ -6,11 +6,11 @@ const React = require('react')
 export default function Journal () {
 
     const [workoutList, setWorkoutList] = useState([{ workout:'' }])
-
+//Helper function for adding workouts
     const handleWorkoutAdd = () => {
         setWorkoutList([...workoutList, { workout: ''}])
     }
-
+//Helper function for removing workouts
     const handleWorkoutRemove = (index) => {
         const list = [...workoutList]
         list.splice(index, 1)
@@ -18,19 +18,21 @@ export default function Journal () {
     }
 
     return (
-        <main>
+        <main className='journal-page'>
             <h1>Log Workouts</h1>
             <div>
                 <label htmlFor='name'>Excerise Type</label>
                 {workoutList.map((singleWorkout, index) => (
                     <div key={index} className='workouts'>
                         <div className='addbtn'>
+                            <div className='btnrow'>
                             <input id='name' name='name' required />
                             {workoutList.length - 1 === index &&
                             workoutList.length < 4 && 
                             (
-                                <button onClick={handleWorkoutAdd}>Add Workout</button>
+                                <button onClick={handleWorkoutAdd}>Add </button>
                             )}
+                            </div>
                         </div>
                          <div className='removebtn'>
                             {workoutList.length > 1 && 

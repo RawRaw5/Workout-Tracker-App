@@ -1,49 +1,29 @@
-import { useState } from 'react'
 const React = require('react')
 
 
 
 export default function Journal () {
 
-    const [workoutList, setWorkoutList] = useState([{ workout:'' }])
-//Helper function for adding workouts
-    const handleWorkoutAdd = () => {
-        setWorkoutList([...workoutList, { workout: ''}])
-    }
-//Helper function for removing workouts
-    const handleWorkoutRemove = (index) => {
-        const list = [...workoutList]
-        list.splice(index, 1)
-        setWorkoutList(list)
-    }
-
     return (
-        <main className='journal-page'>
-            <h1>Log Workouts</h1>
-            <div>
-                <label htmlFor='name'>Excerise Type</label>
-                {workoutList.map((singleWorkout, index) => (
-                    <div key={index} className='workouts'>
-                        <div className='addbtn'>
-                            <div className='btnrow'>
-                            <input id='name' name='name' required />
-                            {workoutList.length - 1 === index &&
-                            workoutList.length < 4 && 
-                            (
-                                <button onClick={handleWorkoutAdd}>Add </button>
-                            )}
-                            </div>
-                        </div>
-                         <div className='removebtn'>
-                            {workoutList.length > 1 && 
-                            (
-                                <button type='button' onClick={() => handleWorkoutRemove(index)}>Delete</button>
-                            )}
-                        </div>
-                    </div>
-                ))}  
-            </div>        
+        <main>
+            <h1>Add New Exercise</h1>
+            <form>
+                <div className='exercise-form'>
+                    <label htmlFor='name'>Exercise</label>
+                    <input className='exercise-name' id='exercise' name='exercise' required/>
+                </div>
+                <div className='reps-form'>
+                    <label htmlFor='number'>Reps</label>
+                    <input className='reps-amount' id='reps' name='reps' required />
+                </div>
+                <div className='sets-form'>
+                    <label htmlFor='number'>Sets</label>
+                    <input className='sets-amount' id='sets' name='sets' required />
+                </div>
+                <br />
+                <input className='submit-exercise' type="submit" value="Add Exercise" />
+                <input className='submit-workout' type="submit" value="Complete Workout" />
+            </form>
         </main>
-    )
+    )    
 }
-

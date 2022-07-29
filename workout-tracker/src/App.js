@@ -7,8 +7,8 @@ import Login from './Components/login';
 function App() {
   return (
       <div className="App">
-       <Home />
-       {/* <Journal /> */}
+       {/* <Home /> */}
+       <Journal />
        {/* <Login /> */}
       </div>
   

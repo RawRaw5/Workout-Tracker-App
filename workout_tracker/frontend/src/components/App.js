@@ -1,5 +1,10 @@
 import React, { Component } from "react"
-import { render } from "react-dom"
+import { createRoot } from "react-dom/client"
+import { BrowserRouter, Routes, Route, Link, Redirect} from "react-router-dom"
+import HomePage from "./HomePage"
+import Workout from "./WorkoutPage"
+import CreateWorkout from "./CreateWorkout"
+
 
 export default class App extends Component {
     constructor(props) {
@@ -7,9 +12,18 @@ export default class App extends Component {
     }
 
     render() {
-        return (<h1>Testing React Code</h1>)
+        return (
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<HomePage />}/>
+                    <Route path='/workouts' element={<Workout />}/>
+                    <Route path='/create' element={<CreateWorkout />}/>
+                </Routes>
+             </BrowserRouter>
+        )
     }
 }
 
 const appDiv = document.getElementById("app")
-render(<App />, appDiv)
+const root = createRoot(appDiv)
+root.render(<App />)

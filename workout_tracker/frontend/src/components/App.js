@@ -5,11 +5,12 @@ export default class App extends Component {
     constructor(props) {
         super(props)
     }
-
+    
     render() {
-        return (<h1>Testing React Code</h1>)
+        return (<h1>We got this!
+        </h1>)
     }
-}
+}    
 
 const appDiv = document.getElementById("app")
 render(<App />, appDiv)

@@ -1,6 +1,6 @@
-/frontend/node_modules
-/api/_pycache_
-/frontend/_pycache_
-/workout_tracker/_pycache_
-/frontend/migrations/_pycache_
-/api/migrations/_pycache_
+/frontend/node_modules/
+/api/_pycache_/
+/frontend/_pycache_/
+/workout_tracker/_pycache_/
+/frontend/migrations/_pycache_/
+/api/migrations/_pycache_/

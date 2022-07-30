@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import { render } from "react-dom"
+import { createRoot } from "react-dom/client"
+import { BrowserRouter, Routes, Route, Link, Redirect} from "react-router-dom"
 import HomePage from "./HomePage"
 import Workout from "./WorkoutPage"
 import CreateWorkout from "./CreateWorkout"
@@ -12,14 +13,17 @@ export default class App extends Component {
 
     render() {
         return (
-        <div>
-            <HomePage />
-            <CreateWorkout />
-            <Workout />
-        </div>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<HomePage />}/>
+                    <Route path='/workouts' element={<Workout />}/>
+                    <Route path='/create' element={<CreateWorkout />}/>
+                </Routes>
+             </BrowserRouter>
         )
     }
 }
 
 const appDiv = document.getElementById("app")
-render(<App />, appDiv)
+const root = createRoot(appDiv)
+root.render(<App />)

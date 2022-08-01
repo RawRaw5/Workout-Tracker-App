@@ -9,48 +9,41 @@ export default class CreateWorkout extends Component {
 
     render() {
         return (
-        <Form>
-            <Row>
-            <Col md={6}>
-                <FormGroup>
-                <Label for="exercise">
-                    Exercise
-                </Label>
-                <Input
-                    id="exercise"
-                    name="exercise"
-                    placeholder="enter exercise here"
-                    type="exercise"
-                />
-                </FormGroup>
-            </Col>
-            <Col md={6}>
-                <FormGroup>
-                <Label for="reps">
-                    Number of Reps
-                </Label>
-                <Input
-                    id="reps"
-                    name="reps"
-                    placeholder="enter amount of reps"
-                    type="number"
-                />
-                </FormGroup>
-            </Col>
-            </Row>
-            <FormGroup>
-            <Label for="sets">
-                Number of Sets
-            </Label>
+        <Form className="exercise-form">
+            <Label>Exercise Form</Label>
+            <Row/>
+            <Label for="exercise" className="exercise">Exercise</Label>
+            <Input
+                id="exercise"
+                name="exercise"
+                placeholder="enter exercise here"
+                type="name"
+                required
+            />
+            <Row/>
+            <Label for="reps" className="reps">Number of Reps</Label>
+            <Input
+                id="reps"
+                name="reps"
+                placeholder="enter number of reps"
+                type="number"
+                required
+            />
+            <Row/>
+            <Label for="sets" className="sets">Number of Sets</Label>
             <Input
                 id="sets"
                 name="sets"
-                placeholder="enter amount of sets"
+                placeholder="enter number of sets"
                 type="number"
+                required
             />
-            </FormGroup>
+            <Row/>
             <Button>
-            Record Exercise
+                Record Exercise
+            </Button>
+            <Button>
+                Finish Workout
             </Button>
         </Form>
       )

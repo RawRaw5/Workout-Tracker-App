@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Link, Redirect} from "react-router-dom"
 import HomePage from "./HomePage"
 import Workout from "./WorkoutPage"
 import CreateWorkout from "./CreateWorkout"
+import Navbar from "./Navbar"
 
 
 export default class App extends Component {
@@ -14,6 +15,7 @@ export default class App extends Component {
     render() {
         return (
             <BrowserRouter>
+                <Navbar />
                 <Routes>
                     <Route path='/' element={<HomePage />}/>
                     <Route path='/workouts' element={<Workout />}/>

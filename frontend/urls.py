@@ -1,8 +1,11 @@
 from django.urls import path
+
+from .views import WorkoutsView
 from .views import index
 
 urlpatterns = [
     path('', index),
-    path('workouts', index),
+    # creates API endpoint that renders the view we gave it
+    path('workouts', WorkoutsView.as_view({'get': 'list'})),
     path('create', index)
 ]

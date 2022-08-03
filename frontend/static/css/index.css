@@ -24,3 +24,28 @@
     text-decoration: none;
   }
 
+  h1 {
+    color: rgba(29, 161, 242, 1);
+    text-align: center;
+  }
+  
+  .home {
+    color: black;
+    text-align: center;
+  }
+  
+  h2 {
+    color: rgba(29, 161, 242, 1);
+    text-align: center;
+  }
+  
+  .about {
+    color: black;
+    text-align: center;
+  }
+  
+  .technologies {
+    color: black;
+    text-align: center;
+  }
+  

@@ -2,3 +2,4 @@
 /frontend/migrations/__pycache__/
 /api/migrations/__pycache__/
 /frontend/static/frontend/ 
+/api/__pycache__/

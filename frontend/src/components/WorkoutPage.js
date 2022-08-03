@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { render } from "react-dom"
+
 
 class Display extends Component {
     constructor(props) {

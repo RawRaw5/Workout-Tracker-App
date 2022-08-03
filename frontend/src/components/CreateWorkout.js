@@ -1,13 +1,10 @@
 import React, { Component } from "react"
-import { Form, Row, Input, Label, FormGroup, Col } from 'reactstrap'
 import { Button } from "@material-ui/core"
 import  Grid  from "@material-ui/core/Grid"
 import { Typography } from "@material-ui/core/"
 import TextField from "@material-ui/core/TextField"
-import FormHelperText from "@material-ui/core/FormHelperText"
 import FormControl from "@material-ui/core/FormControl"
-import { Link } from "react-router-dom"
-import { FormControlLabel } from "@material-ui/core/"
+
 
 export default class CreateWorkout extends Component {
     constructor(props) {

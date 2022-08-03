@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import CreateWorkout from "./CreateWorkout"
-import Workout from "./WorkoutPage"
+
 
 
 export default class HomePage extends Component {

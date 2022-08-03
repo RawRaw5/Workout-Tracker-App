@@ -7,14 +7,41 @@ import TextField from "@material-ui/core/TextField"
 import FormHelperText from "@material-ui/core/FormHelperText"
 import FormControl from "@material-ui/core/FormControl"
 import { Link } from "react-router-dom"
-import { Radio } from "@material-ui/core/"
-import { RadioGroup } from "@material-ui/core/"
 import { FormControlLabel } from "@material-ui/core/"
 
 export default class CreateWorkout extends Component {
     constructor(props) {
-        super(props)
+        super(props) 
+
+        this.handleExercisesChange = this.handleExercisesChange.bind(this)
+        this.handleRepsChange = this.handleRepsChange.bind(this)
+        this.handleSetsChange = this.handleSetsChange.bind(this)
+        this.handleWorkoutButtonPressed = this.handleWorkoutButtonPressed.bind(this)
     }
+    handleWorkoutButtonPressed() {
+        console.log(this.state)
+    }
+
+    handleExercisesChange(e) {
+        this.setState({
+            exercises: e.target.value
+        })
+    }
+
+    handleRepsChange(e) {
+        this.setState({
+            reps: e.target.value
+        })
+    }
+
+    handleSetsChange(e) {
+        this.setState({
+            sets: e.target.value
+        })
+    
+    
+    
+}
 
     render() {
         return  <Grid container spacing={1}>
@@ -27,23 +54,35 @@ export default class CreateWorkout extends Component {
                 <FormControl component="fieldset">
                     <div align="center">Exercise</div>
                     <br></br>
-                    <TextField required={true} type="text" inputProps={{style: { textAlign: "center"}
+                    <TextField
+                     required={true} 
+                     type="text"
+                     onChange={this.handleExercisesChange} 
+                     inputProps={{style: { textAlign: "center"}
                     }}/>
                     <br></br>
                     <div align="center">Number of Reps</div>
                     <br></br>
-                    <TextField required={true} type="number" inputProps={{min:1, style: { textAlign: "center"}
+                    <TextField 
+                    required={true}
+                    type="number"
+                    onChange={this.handleRepsChange} 
+                    inputProps={{min:1, style: { textAlign: "center"}
                     }}/>
                     <br></br>
                     <div align="center">Number of Sets</div>
                     <br></br>
-                    <TextField required={true} type="number" inputProps={{min:1, style: { textAlign: "center"}
+                    <TextField 
+                    required={true} 
+                    type="number"
+                    onChange={this.handleSetsChange}
+                    inputProps={{min:1, style: { textAlign: "center"}
                     }}/>
                     <br></br>
                 </FormControl>
             </Grid>
             <Grid item xs={12} align="center">
-                <Button color="primary" variant="contained">
+                <Button color="primary" variant="contained" onClick={this.handleWorkoutButtonPressed}>
                     Create Exercise
                 </Button>
             </Grid>

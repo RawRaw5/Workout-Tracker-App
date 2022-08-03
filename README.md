@@ -11,6 +11,7 @@ Robert and Parker are making a workout tracking website application for mileston
 * [Links](#links)
 * [How to use](#how-to-use)
 * [License](#license)
+* [Author Info](#author-info)
 
 ## Description
 ---

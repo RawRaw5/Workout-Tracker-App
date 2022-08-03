@@ -12,7 +12,7 @@ class Display extends Component {
     }
 
     componentDidMount() {
-        fetch('http://127.0.0.1:8000/workouts')
+        fetch('http://127.0.0.1:8000/api/workouts')
             .then(response => {
                 if(response.status > 400) {
                     return this.setState(() => {

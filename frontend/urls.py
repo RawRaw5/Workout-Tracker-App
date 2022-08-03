@@ -6,6 +6,6 @@ from .views import index
 urlpatterns = [
     path('', index),
     # creates API endpoint that renders the view we gave it
-    path('workouts', WorkoutsView.as_view({'get': 'list'})),
+    path('api/workouts', WorkoutsView.as_view({'get': 'list'})),
     path('create', index)
 ]

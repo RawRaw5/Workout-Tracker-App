@@ -19,7 +19,18 @@ export default class CreateWorkout extends Component {
         this.handleWorkoutButtonPressed = this.handleWorkoutButtonPressed.bind(this)
     }
     handleWorkoutButtonPressed() {
-        console.log(this.state)
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                exercises: this.state.exercises,
+                reps: this.state.reps,
+                sets: this.state.sets
+            }),
+        }
+        fetch('/api/workouts', requestOptions).then((response) => 
+        response.json()
+        ).then((data) => console.log(data))
     }
 
     handleExercisesChange(e) {

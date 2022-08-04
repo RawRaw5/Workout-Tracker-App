@@ -1,7 +1,7 @@
 # **Workout-Tracker-App**
 Robert and Parker are making a workout tracking website application for milestone project #3. 
 
-![Project image]()
+
 
 
 ## Table of Contents

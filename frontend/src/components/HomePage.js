@@ -21,7 +21,7 @@ export default class HomePage extends Component {
                     </div>
                     <div className="technologies">
                         <h2>Technologies</h2>
-                            <p>Frontend - React, Javascript, Material UI, React-router-dom Babel, Webpack</p>
+                            <p>Frontend - React, Javascript, Material UI, React-router-dom, Babel, Webpack</p>
                             <p>Backend - Python, Django, db.sqlite3 </p>
                     </div>
             </main>    

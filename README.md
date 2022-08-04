@@ -10,21 +10,22 @@ Robert and Parker are making a workout tracking website application for mileston
 * [Description](#description)
 * [Links](#links)
 * [How to use](#how-to-use)
-* [License](#license)
 * [Author Info](#author-info)
 
 ## Description
 ---
-We both had the role of being Full-stack Developers for this project. For the frontend we used React and for backend we used Python with Django. We decided to implement Django because it’s a framework neither of us were familiar with and didn’t learn in our bootcamp course, so we wanted to challenge ourselves and learn something new. Facing many challenges and issues, we had the opportunity to learn a lot through trail and error. A few of those issues that we found solutions to were coding with Python/Django, Git commands, server deployment and connecting frontend->backend->sever->database->showing on frontend. 
+We both had the role of being Full-stack Developers for this project. For the frontend we used React and for backend we used Django. We decided to implement Django because it’s a framework neither of us were familiar with and didn’t learn in our bootcamp course, so we wanted to challenge ourselves and learn something new. Facing many challenges and issues, we had the opportunity to learn a lot through trial and error. A few of those issues that we found solutions to were coding with Python/Django and Git commands.
 
 ## Technologies
 
-|  Frontend | Backend   |
-| :-------: | :-------: |
-| React     | Python    |
-| Bootstrap | Django    |
-| Reactstrap| Heroku    |
-| Babel     | PostgreSQL|
+|  Frontend  | Backend   |
+| :-------:  | :-------: |
+| React      | Python    |
+| Javascript | Django    |
+| Material UI| db.sqlite3|
+| Babel      |           |
+| React-router-dom|      | 
+| Webpack    |           |       
 
 
 ## Links
@@ -55,10 +56,6 @@ We both had the role of being Full-stack Developers for this project. For the fr
     "python3 manage.py runserver"  <- run the server
 ```
 
-## License
---- 
-dummy code
-
 ## Author Info
 ---
 * [Robert's Linkedin](www.linkedin.com/in/robertwhite94)
@@ -66,4 +63,13 @@ dummy code
 * [Parker's Linkedin](https://www.linkedin.com/in/parker-van-every/)
 * [Parker's Github](https://github.com/pdvanevery)
 ---
+
+## Project Status
+---
+This project is still in progress. The next features to be added are a log-in page, user authentification and deployment to AWS. 
+
+#### Known Bugs
+---
+* POST request denied because missing CSRF token
+
 [Back To The Top](#workout-tracker-app)

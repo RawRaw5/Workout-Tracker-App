@@ -37,7 +37,7 @@ class Display extends Component {
                 {this.state.data.map(workouts => {
                     return (
                         <li key={workouts.id}>
-                            {workouts.exercises} - {workouts.reps} -{workouts.sets}
+                            {workouts.exercises} - {workouts.reps} Reps for {workouts.sets} Sets
                         </li>
                     )
                 })}
